@@ -15,7 +15,7 @@ I created this page to highlight the projects I worked on during my time learnin
 6. [Deep Learning](https://robsap.github.io/Deep_Learning/)
 7. [Group Projects](https://robsap.github.io/Group_Projects/)
 8. [Parallel Programming](https://robsap.github.io/Parallel_Programming/)
-9.  [MediFor](https://robsap.github.io/MediFor/)
+9.  [MediFor](https://robsap.github.io/MediFor/) 
 10. [Other](https://robsap.github.io/other/)
 
 
