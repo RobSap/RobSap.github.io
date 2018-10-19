@@ -11,7 +11,7 @@ I created this page to highlight the projects I worked on during my time learnin
 2. [Unity Games](https://robsap.github.io/UnityGamesWebGl/)
 3. [Operating Systems](https://robsap.github.io/Operating_Systems/)
 4. [Android Applications]( https://robsap.github.io/Android_Apps/)
-5. [Machine Learning](http://robsap.github.io/Machine_Learning/)
+5. [Machine Learning](https://robsap.github.io/Machine_Learning/)
 6. [Deep Learning](https://robsap.github.io/Deep_Learning/)
 7. [Group Projects](https://robsap.github.io/Group_Projects/)
 8. [Parallel Programming](https://robsap.github.io/Parallel_Programming/)
