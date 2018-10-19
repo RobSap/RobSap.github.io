@@ -6,11 +6,7 @@ This repository uses GitHub Pages and Markdown files. Click [here](https://robsa
 
 I created this page to highlight the projects I worked on during my time learning programming.
 
-### Recent Projects
-
-### Popular Projects
-
-### Topics of Interest
+### Directories for Projects
 1. [Unity Augmented Reality](https://robsap.github.io/Unity_Augmented_Reality_Apps/)
 2. [Unity Games](https://robsap.github.io/UnityGamesWebGl/)
 3. [Operating Systems](https://robsap.github.io/Operating_Systems/)
