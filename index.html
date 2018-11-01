@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Portfolio Item - Start Bootstrap Template</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap_files/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="./bootstrap_files/portfolio-item.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="https://github.com/RobSap/">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="classes.html">Classes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="interests_skills.html">Interest</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+       <div class="row">
+      <!-- Portfolio Item Heading -->
+      <h1>Robs Github Pages </h1>
+      <p> Testing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.
+       </div>
+      <!-- Portfolio Item Row -->
+      <div class="row">
+
+        <div class="col-md-8">
+
+        
+
+
+         <!--
+         <img class="img-fluid" src="./bootstrap_files/750x500" alt="">
+         -->
+           <div class="row">
+          <h2><b>Top Projects </b></h2>
+           </div>
+              <div class="preview">
+                  <div class="img">
+                  <h3><i>Project Name 1</i></h3>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-10">
+                           <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
+                          <img class = "img" src="./bootstrap_files/750x500" alt="Place Holder" style="width:100%">
+                            <button class="next" onclick="plusDivs(1)">&#10095;</button>
+                      </div>
+                   </div>
+                  <div class="row">
+                  <h4>Description</h4>
+                  
+                  <p>Project 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, fel is enim.</p>
+                  <p>Project 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, fel is enim.</p>
+                       
+                  </div>
+              </div> <!-- End slide1 -->
+              
+              <div class="preview">
+                  
+                  <h3><i>Project Name 2</i></h3>
+                  <div class="row">
+                      <div class="col-md-10">
+                          <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
+                          <img class = "img" src="./bootstrap_files/750x500" alt="Place Holder" style="width:100%">
+                          <button class="next" onclick="plusDivs(1)">&#10095;</button>
+                      </div>
+                   </div>
+          
+                  <div class="row">
+                      <h4 >Description</h4>
+                      
+                      <p>Project 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+                  </div>
+              </div> <!-- End slide1 -->
+
+
+        </div>
+        
+        <div class="col-md-4">
+          
+                   <h3>Project Topic Links</h3>
+                   <ul>
+                       <li><a href="https://robsap.github.io/Unity_Augmented_Reality_Apps/">Unity Augmented Reality</a></li>
+                       <li><a href="https://robsap.github.io/UnityGamesWebGl/">Unity Games</a></li>
+                       <li><a href="https://robsap.github.io/Operating_Systems/">Operating Systems</a></li>
+                       <li><a href="https://robsap.github.io/Android_Apps/">Android Applications</a></li>
+
+                        <li><a href="https://robsap.github.io/Machine_Learning/">Machine Learning</a></li>
+                        <li><a href="https://robsap.github.io/Deep_Learning/">Deep Learning</a></li>
+                        <li><a href="https://robsap.github.io/Group_Projects/">Group Projects</a></li>
+                        <li><a href="https://robsap.github.io/Parallel_Programming/">Parallel Programming</a></li>
+                        <li><a href="https://robsap.github.io/Group_Projects/">Group Projects</a></li>
+                        <li><a href="https://robsap.github.io/MediFor/">MediFor</a></li>
+                        <li><a href="https://robsap.github.io/other/">Other</a></li>
+              
+          </div>
+        
+
+       </div>
+      <!-- /.row -->
+      <script>
+          var index = 1;
+          showDivs(index);
+          
+          function plusDivs(n) {
+              showDivs(index += n);
+          }
+      
+      function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("preview");
+          if (n > x.length) {index = 1}
+          if (n < 1) {index = x.length}
+          for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+          }
+          x[index-1].style.display = "block";
+      }
+      </script>
+      
+    
+    
+      <!-- Related Projects Row -->
+      <!--
+      <h3 class="my-4">Related Projects</h3>
+
+      <div class="row">
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="./bootstrap_files/500x300" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="./bootstrap_files/500x300" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="./bootstrap_files/500x300" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="./bootstrap_files/500x300" alt="">
+          </a>
+        </div>
+
+      </div> -->
+      <!-- /.row -->
+
+    </div>
+      
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright © Your Website 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="./bootstrap_files/jquery.min.js"></script>
+    <script src="./bootstrap_files/bootstrap.bundle.min.js"></script>
+
+  
+
+
+</body></html>
