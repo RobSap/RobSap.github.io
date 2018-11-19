@@ -46,8 +46,8 @@
 
     <!-- Page Content -->
     <div class="container">
-
-       <div class="row">
+         <div class="row"></div>
+         <div class="row">
       <!-- Portfolio Item Heading -->
       <h1>Rob's Github Pages </h1>
       <p> Hello and welcome to my github pages. I created these pages to highlight and navigate the various projects I have worked on over the years. Some are school projects, some work related and most are done for fun. Some projects are set to private due to rights restrictions or due to being an assignment for a school class.
@@ -63,39 +63,33 @@
         <div class="row">
             <!-- Topic  Heading -->
             <h1>Medifor</h1>
-            <p>This is a listing of some work that was done on the Medifor project.
+            <br>
+            <p>This contains some information on the DARPA Medifor Project. Below is some information on parts of the project I worked on.  
         </div>
         
 
+<!-- card 1 -->
+<div class="card">
+    <h2 class="card-title">Inference System</h2>
+    <img src="images/no_photo.jpg" alt="Place Holder" style="width:100%">
+        
+        <div class="card-body">
+            <h3 class="card-title">Description</h3>
+            <p class="card-text"><P>Info - The last system I created is on a gitlab that requires access from DARPA. Due to rights issues, nothing is posted right now.
+            </p>
+            <p> I will update this at some point with public domain code soon.</p>
+
+            </p>
+            <!-- <a href="#" class="btn btn-primary">Read More &rarr;</a> -->
+        </div>
+        <div class="card-footer text-muted">
+            Posted on Nov 1, 2018 by Rob
+        </div>
+        </div>
+<br>
+<!-- End card 1 -->
 
 
-           <div class="row">
-               
-          <h2><b>Project List </b></h2>
-           </div>
-              <div class="preview"> <!-- start slide 1-->
-                  <div class="img">
-                  <h3><i>Inference System</i></h3>
-                  </div>
-                  <div class="row">
-                      <div class="col-md-10">
-                           <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
-
-                          <img class = "img" src="images/no_photo.jpg" alt="Place Holder" style="width:100%">
-                            
-                            <button class="next" onclick="plusDivs(1)">&#10095;</button>
-                      </div>
-                   </div>
-                  <div class="row">
-                   <span><h4>Description</h4>
-                  
-                     <P>Info - The last system I created is on a gitlab that requires access from DARPA. Due to rights issues, nothing is posted as of now.
-                          </p>
-                          <p> I will update this soon</p>
-
-                   </span>
-                  </div>
-              </div> <!-- End slide1 -->
               
 
         </div>
@@ -108,8 +102,8 @@
                        <li><a href="UnityGamesWebGl.html">Unity Games</a></li>
                        <li><a href="Operating_Systems.html">Operating Systems</a></li>
                        <li><a href="Android_Apps.html">Android Applications</a></li>
-                        <li><a href="Machine_Learning.html">Machine Learning</a></li>
-                        <li><a href="Deep_Learning.html">Deep Learning</a></li>
+                        <li><a href="Machine_Learning.html">Machine Learning and Deep Learning</a></li>
+                        
                         <li><a href="Group_Projects.html">Group Projects</a></li>
                         <li><a href="Parallel_Programming.html">Parallel Programming</a></li>
                         <li><a href="MediFor.html">MediFor</a></li>
@@ -136,25 +130,7 @@
 
        </div>
       <!-- /.row -->
-      <script>
-          var index = 1;
-          showDivs(index);
-          
-          function plusDivs(n) {
-              showDivs(index += n);
-          }
-      
-      function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("preview");
-          if (n > x.length) {index = 1}
-          if (n < 1) {index = x.length}
-          for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";
-          }
-          x[index-1].style.display = "block";
-      }
-      </script>
+ 
 
 
     </div>

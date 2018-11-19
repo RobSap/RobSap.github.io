@@ -46,8 +46,8 @@
 
     <!-- Page Content -->
     <div class="container">
-
-       <div class="row row">
+        <div class="row"></div>
+        <div class="row row">
       <!-- Portfolio Item Heading -->
       <h1>Rob's Github Pages </h1>
       <p> Hello and welcome to my github pages. I created these pages to highlight and navigate the various projects I have worked on over the years. Some are school projects, some work related and most are done for fun. Some projects are set to private due to rights restrictions or due to being an assignment for a school class.
@@ -65,7 +65,7 @@
                 <li><p>Operating Systems</p> </li>
                 <li><p>Programming Languages</p> </li>
                 <li><p>Introduction to Artificial Intelligence</p> </li>
-                <li><p>Machine Learning</p> </li>
+                <li><p>Machine Learning and Deep Learning</p> </li>
                 <li><p>Data Mining</p> </li>
 
             </ul>
@@ -93,7 +93,7 @@
               <li><a href="Operating_Systems.html">Operating Systems</a></li>
               <li><a href="Android_Apps.html">Android Applications</a></li>
               <li><a href="Machine_Learning.html">Machine Learning</a></li>
-              <li><a href="Deep_Learning.html">Deep Learning</a></li>
+              
               <li><a href="Group_Projects.html">Group Projects</a></li>
               <li><a href="Parallel_Programming.html">Parallel Programming</a></li>
               <li><a href="MediFor.html">MediFor</a></li>
@@ -120,25 +120,7 @@
 
       </div>
       <!-- /.row -->
-      <script>
-          var index = 1;
-          showDivs(index);
-          
-          function plusDivs(n) {
-              showDivs(index += n);
-          }
-      
-      function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("preview");
-          if (n > x.length) {index = 1}
-          if (n < 1) {index = x.length}
-          for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";
-          }
-          x[index-1].style.display = "block";
-      }
-      </script>
+ 
       
     
     
