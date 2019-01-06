@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="RobSaps Classes">
+    <meta name="author" content="Rob Sap">
+
+    <title>RobSap's Gibhub Directory</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../bootstrap_files/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../bootstrap_files/portfolio-item.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <!--div class="container">-->
+        <a class="navbar-brand" href="https://robsap.github.io/">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../classes.html">Classes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../interests_skills.html">Interests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact.html">Contact</a>
+            </li>
+          </ul>
+        <!--</div>-->
+      </div>  <!-- end nav -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+         <div class="row"></div>
+         
+         <div >
+              <!-- Portfolio Item Heading -->
+              <h1 style="text-align: center;">MNIST - The Hello World of ML</h1>
+
+         </div>
+          <!-- Portfolio Item Row -->
+          <div class="row">
+              
+              
+
+                <!-- <div class="col-md-8"> -->
+               <div class="row">
+                   <!-- MNIST Example -->
+                   
+                   
+                   <style type="text/css">
+                       .gist {max-height: 350px;  !important;}
+                       .gist-file
+                       .gist-data  {max-height: 350px;}
+                       </style>
+                
+                   
+                   <!-- <h2 style="text-align: center;">
+                       Spam and Ham Detection for Youtube Comments Part 1 of 3</h2>
+                    -->
+                   <br />
+
+                   <h3>Introduction:</h3>
+                   <p> This tutorial assumes you know the basics about ML and know what Keras is. The purpose of this tutorial is to show a user how to train Multi Layer Perceptron (MLP) / Neural Network (NN) in Keras.
+                   
+                   </p>
+                   
+                   <div>
+                       <h3>Import Libraries and Load Data</h3>
+                       <p> In this example we load the MNIST Data that comes with Keras. To read more about it, see the official documentation <a href="https://keras.io/datasets/#mnist-database-of-handwritten-digits">here</a>. We also import all the libraries needed for this project.</p>
+                       <script src="https://gist.github.com/RobSap/5df9b23f200d0abd09f589b380cf5bfc.js"></script>
+                   </div>
+                   
+                 
+                   <div>
+                       <h3>Process Data Part 1</h3>
+              
+                       <P> After loading the data, we need to reshape it. The input shape will be required in our NN on the first layer. We have x images, in shape y * z. We turned our images into a flatten array, thus y*z, for each image. The output is (num_examples,flatten_array). In our example we don't have to worry about color channels, because our images are grayscale images.
+                       <script src="https://gist.github.com/RobSap/84b0d764b0dd55ffc4411c065eb7881d.js"></script>
+                   </div>
+                  
+                   
+                   <div>
+                       <h3>Process Data Part 2</h3>
+                       <p> Keras has a default backend as float 32, so we change our data input to this type. And then we divide by 255. Why? This changes our pixel range from 0-255 to 0.0-1.0. This makes it easier for our Keras System. 0.0 means 0 (black) and 1.0 means 255 (white).</p>
+                       <script src="https://gist.github.com/RobSap/c4eb65c93f68161f557f0c628053c295.js"></script>
+                   </div>
+                   
+                   
+                   <div>
+                       <h3>Process Data Part 3</h3>
+                       <p>Since we have 10 classes (0-9) using categorical works well in this example. For for a given label, if the number is 3, this function converts the label to [0, 0, 0, 1, 0, 0, 0, 0, 0, 0] in which you can see the value for 3 is marked.</P>
+                       <script src="https://gist.github.com/RobSap/8e181bc8ce09df8ae06aa5e6303d58ab.js"></script>
+                   </div>
+                   
+                   
+                   <div>
+                       <h3>Keras Model</h3>
+                       <p>Now lets build our Sequential Model. In the input layer, it request the input shape, which previously we set as 28*28. The number of training examples are not require in this case. Thus input is (*,28*28). Now the output layer has shape (*, 32).  This number was somewhat randomly picked. After this first layer, you do not need to list the input layer each layer. Also worth noting, the relu activation layer is likely the most common one to use in between layers. I use this one because it is not only accurate but it is fast. Read more about why <a href="https://stats.stackexchange.com/questions/226923/why-do-we-use-relu-in-neural-networks-and-how-do-we-use-it">Relu Advantage </a> or <a href="https://stats.stackexchange.com/questions/226923/why-do-we-use-relu-in-neural-networks-and-how-do-we-use-it">Why use Relu?</a> For the last layer, we use num_classes. Which from above is 10. So the output layer outputs 10 results. And for the output, we use the logistic sigmoid activation functions.  </p>
+                       <script src="https://gist.github.com/RobSap/cad96d0e609f49b6eb651d16811f0125.js"></script>
+                   </div>
+                 
+                   
+                   
+                   <div>
+                       <h3>Compile</h3>
+                       <p>This is were we design the learning process of our system. Using binary cross entropy is needed because we are determining 0, 1 applies to our pictures. For metrics, accuracy is fine for now. For optimizer, which update our weights, I used Adam for its adaptive learning rate. RMSprop should work just as well on this example. The key difference is Adam uses a bias-correction and adds momentum to RMSprop. Either works well for this problem.  </P>
+                       <script src="https://gist.github.com/RobSap/a154e8fd277b3192b0344505f0ac4f7c.js"></script>
+                   </div>
+                   
+                   
+                   
+                   <div>
+                       <h3>Fit Model</h3>
+                       <p> Fit model trains our model for a given number of iterations, which is set by epochs.</p>
+                       <script src="https://gist.github.com/RobSap/05426b10e3ba49c14deebe31887dc61a.js"></script>
+                   </div>
+                   
+                   
+                   
+                   <div>
+                       <h3>Model Training</h3>
+                       <P> This shows the status of our model training. Since we are not doing a "test" case, we use the test case as the validation case. In this example, each epoch (iteration) you can see how well the model trains.  </p>
+                       <script src="https://gist.github.com/RobSap/a235428699357f470b762c0511d12434.js"></script>
+                       <p></p>
+                       <br><br>
+
+                   </div>
+                
+                  
+                   <div>
+                       <p>
+                       <h3>Model's Loss</h3>
+                        <p> From the loss output over Epochs we can see how the loss value gets farther away from 1 and closer to 0. We of course want to minimise the loss. Since the loss increases as the probability starts to differ more than the actual label. At the start we can see the first few epochs underfit as the validation and train error are both high. Then after 7 epochs we start to see over fitting as the evalution error is high and training error is lower. But it looks like the fit we want with both training and validation error low, and where the validation is slightly higher than the training, is on about 5-7 epochs. </p>
+                        <a href="https://3.bp.blogspot.com/-mOZ9H2gK8Co/XAcsroZUG4I/AAAAAAAACWI/iUmsZMn5l-soeB8l2FTqfolWvJy9vKBGQCLcBGAs/s1600/Figure_1.png" imageanchor="1" ><img border="0" src="https://3.bp.blogspot.com/-mOZ9H2gK8Co/XAcsroZUG4I/AAAAAAAACWI/iUmsZMn5l-soeB8l2FTqfolWvJy9vKBGQCLcBGAs/s640/Figure_1.png" width="640" height="480" data-original-width="1280" data-original-height="960" /></a>
+                       </p>
+                       
+                   </div>
+                 
+                   
+                   <div>
+                       <h3>Model's Accuracy</h3>
+                       <p>Here we can see how well the model does for each epoch. After about the 5-6 epoch, we start to see the model overfit on the training data. We want the accuracy to be a best as we can, without over or under fitting. Matching the accuracy to the loss, we pick 5 epochs as the best choice. </P>
+                       <a href="https://4.bp.blogspot.com/-cD6uY5Dm4zg/XAcsrst8cDI/AAAAAAAACWM/-STOdyUdxzwYog6Bu-Ug-T2sGTGIDga5gCLcBGAs/s1600/Figure_2.png" imageanchor="1" ><img border="0" src="https://4.bp.blogspot.com/-cD6uY5Dm4zg/XAcsrst8cDI/AAAAAAAACWM/-STOdyUdxzwYog6Bu-Ug-T2sGTGIDga5gCLcBGAs/s640/Figure_2.png" width="640" height="480" data-original-width="1280" data-original-height="960" /></a>
+                       
+                  
+                      <h3>Conclusion</h3>
+                      <p> We can easily achieve accuracy over 99.9%. In a problem like this, this is a very good score. We didn't really need to do any optimization because the network just happend to be pretty accurate to start with. Normally you need to optimize your network by tuning and improving on the model.  
+                      
+                      </P>
+                  
+                  
+                       
+                   </div>
+                   </br>
+                   
+                   <div>
+                       <h3>Full Code</h3>
+                       <p> conclusion notes here
+                       <p>Insert script here
+                   </div>
+                   </br>
+
+
+
+               </div>  <!--end row-->
+        
+
+               <!-- </div>   <!--end col-->
+        
+        
+
+       </div>  <!--end row -->
+      
+
+
+    
+    </div> <!-- end container -->
+      
+
+
+    <!-- Footer -->
+    <footer class="py-2 bg-dark fixed-bottom">
+      <!-- <div class="container">-->
+          <p class="m-0 text-center text-white">
+          Original and Modified work Copyright (c) 2018 RobSap and are licensed under the terms of the MIT license.</p>
+      
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../bootstrap_files/jquery.min.js"></script>
+    <script src="../bootstrap_files/bootstrap.bundle.min.js"></script>
+
+  
+
+
+</body></html>
